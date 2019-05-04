@@ -1,0 +1,12 @@
+ul.no_bullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }
+li.calendar {
+    background: url('calendar.jpg') no-repeat left top;
+    height: 20px;
+    width: 20px;
+    /* padding-left: 44px;
+    padding-top: 3px; */
+    }
