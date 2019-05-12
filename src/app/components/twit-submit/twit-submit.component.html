@@ -1,0 +1,14 @@
+
+   <!-- <form>
+    <div>
+      <textarea cols = "50" rows="3" id="textArea" [(ngModel)] = >Write your twit here...</textarea>
+    </div>
+   
+      <button type="reset">Cancel</button>
+      <button type="submit">Submit</button>
+    </form> -->
+  
+<form class = "form" (ngSumit) = "onSubmit()">
+  <input type = "text" name = "twitText" [(ngModel)] = "twitText" placeholder = "Add Twit...">
+  <input type = "submit" value = "Submit" class = "btn">
+</form>

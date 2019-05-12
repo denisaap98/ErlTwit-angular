@@ -1,8 +1,106 @@
-<p>
+ <p>
   post-twit works!
 </p>
-<ul *ngFor = "let twit of twits">
-  <li>
-    <p>{{ twit.mesaj}}</p>
-  </li>
-</ul>
+
+<app-twit-item *ngFor = "let twit of twits" [twit] = "twit">
+  <p>{{twit.mesaj}}</p>
+</app-twit-item> 
+
+
+  
+  <!-- <div class="panel panel-primary" style = "width: 100%">
+    <div class="panel-heading">
+      <h3 class="panel-title">Utilizator @username May 4</h3>
+    </div>
+    <div class="panel-body">
+      Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+      <div >
+          <button><small>Likes</small></button><button><small>Shares</small></button>
+        </div>
+    </div>
+  </div>
+  
+  <div class="panel panel-primary" style = "width: 100%">
+      <div class="panel-heading">
+        <h3 class="panel-title">Utilizator @username May 4</h3>
+      </div>
+      <div class="panel-body">
+        Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+        <div >
+            <button><small>Likes</small></button><button><small>Shares</small></button>
+          </div>
+      </div>
+    </div>
+
+    <div class="panel panel-primary" style = "width: 100%">
+        <div class="panel-heading">
+          <h3 class="panel-title">Utilizator @username May 4</h3>
+        </div>
+        <div class="panel-body">
+          Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+          <div >
+              <button><small>Likes</small></button><button><small>Shares</small></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="panel panel-primary" style = "width: 100%">
+          <div class="panel-heading">
+            <h3 class="panel-title">Utilizator @username May 4</h3>
+          </div>
+          <div class="panel-body">
+            Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+            <div >
+                <button><small>Likes</small></button><button><small>Shares</small></button>
+              </div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary" style = "width: 100%">
+            <div class="panel-heading">
+              <h3 class="panel-title">Utilizator @username May 4</h3>
+            </div>
+            <div class="panel-body">
+              Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+              <div >
+                  <button><small>Likes</small></button><button><small>Shares</small></button>
+                </div>
+            </div>
+          </div>
+
+          <div class="panel panel-primary" style = "width: 100%">
+              <div class="panel-heading">
+                <h3 class="panel-title">Utilizator @username May 4</h3>
+              </div>
+              <div class="panel-body">
+                Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+                <div >
+                    <button><small>Likes</small></button><button><small>Shares</small></button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="panel panel-primary" style = "width: 100%">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Utilizator @username May 4</h3>
+                </div>
+                <div class="panel-body">
+                  Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+                  <div >
+                      <button><small>Likes</small></button><button><small>Shares</small></button>
+                    </div>
+                </div>
+              </div>
+
+              <div class="panel panel-primary" style = "width: 100%">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Utilizator @username May 4</h3>
+                  </div>
+                  <div class="panel-body">
+                    Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit. Text twit.
+                    <div >
+                        <button><small>Likes</small></button><button><small>Shares</small></button>
+                      </div>
+                  </div>
+                </div> -->
+
