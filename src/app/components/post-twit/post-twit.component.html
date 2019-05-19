@@ -3,8 +3,10 @@
 </p>
 
 <app-twit-item *ngFor = "let twit of twits" [twit] = "twit">
-  <p>{{twit.mesaj}}</p>
-</app-twit-item> 
+  <p>{{twit.Mesaj}}</p>
+</app-twit-item>  
+
+<app-twit-submit (submitTwit) = "submitTwit($event)"></app-twit-submit>
 
 
   

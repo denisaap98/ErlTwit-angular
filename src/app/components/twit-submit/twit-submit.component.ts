@@ -14,9 +14,11 @@ export class TwitSubmitComponent implements OnInit {
   }
 
   onSubmit(){
+    console.log("onSubmit()");
     const twit = {
       twitText: this.twitText
     }
+    console.log(twit);
     this.submitTwit.emit(twit);
   }
 
