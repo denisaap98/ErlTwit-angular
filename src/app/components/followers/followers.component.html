@@ -1,0 +1,20 @@
+<!-- <p><a routerLink = '/followers'>Followers component</a></p>
+ <ul *ngFor = "let follower of followers"> 
+  <li><a [routerLink] = "['/followers', follower]">{{ follower }}</a></li> 
+</ul>   -->
+
+<!-- <p><a routerLink = '/followers'>Followers component</a></p>
+ <ul *ngFor = "let follower of account.followers"> 
+  <li><a [routerLink] = "['/followers', follower]">{{ follower }}</a></li> 
+</ul>  -->
+
+<h2>Followers</h2>
+<ul class="followers">
+  <li *ngFor="let follower of followers | async"
+    [class.selected]="follower.id === selectedId">
+    <a [routerLink]="['/follower', follower.id]">
+      <span class="badge">{{ follower.id }}</span>{{ follower.name }}
+    </a>
+  </li>
+</ul>
+

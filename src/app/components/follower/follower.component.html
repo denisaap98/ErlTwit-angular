@@ -1,0 +1,13 @@
+<h2>Followers</h2>
+<div *ngIf="follower | async as follower">
+  <h3>"{{ follower.name }}"</h3>
+  <div>
+    <label>Id: </label>{{ follower.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="follower.name" placeholder="name"/>
+  </div>
+  <p>
+    <button (click)="gotoFollowers(follower)">Back</button>
+  </p>
+</div>
