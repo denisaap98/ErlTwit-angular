@@ -18,7 +18,6 @@ export class UserInfoItemComponent implements OnInit {
     this.current_account = JSON.parse(localStorage.getItem("current_account"));
     console.log(this.current_account)
     console.log(localStorage.getItem("user_login"), "din user-item")
-
   }
   followAccount(account: Account){
    // this.accountService.followAccount(account).subscribe(account => {

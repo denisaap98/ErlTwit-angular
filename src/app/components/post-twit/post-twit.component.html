@@ -1,10 +1,5 @@
- <p>
-  post-twit works!
-</p>
+<div style = "padding-bottom: 20px; padding-top: 30px; padding-left: 150px"><app-twit-submit (submitTwit) = "submitTwit($event)"></app-twit-submit></div>
+<app-twit-item *ngFor = "let twit of twits.reverse()" [twit] = "twit"></app-twit-item>  
 
-<app-twit-item *ngFor = "let twit of twits" [twit] = "twit">
 
-</app-twit-item>  
-
-<app-twit-submit (submitTwit) = "submitTwit($event)"></app-twit-submit>
 

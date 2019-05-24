@@ -8,13 +8,19 @@
   <li><a [routerLink] = "['/followers', follower]">{{ follower }}</a></li> 
 </ul>  -->
 
-<h2>Followers</h2>
-<ul class="followers">
-  <li *ngFor="let follower of followers | async"
-    [class.selected]="follower.id === selectedId">
-    <a [routerLink]="['/follower', follower.id]">
-      <span class="badge">{{ follower.id }}</span>{{ follower.name }}
-    </a>
-  </li>
-</ul>
 
+
+<div style = "padding-top: 180px; padding-left:500px; width:1000px">
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">4</span>
+    <h2>Followers</h2>
+  </li>
+  <li class="list-group-item" *ngFor="let follower of followers | async"
+  [class.selected]="follower.id === selectedId">
+  <a [routerLink]="['/follower', follower.id]">
+    <span class="badge"></span>{{ follower.name }}
+  </a>
+</li>
+</ul>
+</div>

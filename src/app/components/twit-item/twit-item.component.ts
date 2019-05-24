@@ -10,9 +10,11 @@ import { TwitService } from '../../services/twit.service';
 })
 export class TwitItemComponent implements OnInit {
   @Input() twit: Twit;
+  current_account: Account;
   constructor() { }
 
   ngOnInit() {
+    this.current_account = JSON.parse(localStorage.getItem("current_account"));
   }
 
 }

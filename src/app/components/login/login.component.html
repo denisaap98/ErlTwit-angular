@@ -1,5 +1,21 @@
-<form (submit) = "loginUser($event)">
+<!-- <form (submit) = "loginUser($event)">
   <input type = "text" placeholder = "Username" id = "username">
   <input type = "password" placeholder = "Password" id = "password">
   <input type = "submit" value = "Submit">
-</form>
+</form> -->
+
+<div class="wrapper fadeInDown" style = "padding-top: 150px" >
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Sign In </h2>
+      
+  
+      <!-- Login Form -->
+      <form (submit) = "loginUser($event)">
+        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username">
+        <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+        <input type="submit" class="fadeIn fourth" value="Log In" value = "submit">
+      </form>
+  
+    </div>
+  </div>

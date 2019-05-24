@@ -75,9 +75,9 @@ import { Globals } from './globals';
       //   component: FollowersComponent
       // }
       { path: '',   redirectTo: '/superheroes', pathMatch: 'full' },
-      { path: 'followers', redirectTo: '/superheroes' },
+      { path: 'followers', redirectTo: '/followers' },
       { path: 'follower/:id', redirectTo: '/follower/:id' },
-      { path: 'superheroes',  component: FollowersComponent, data: { animation: 'followers' } },
+      { path: 'followers',  component: FollowersComponent, data: { animation: 'followers' } },
       { path: 'follower/:id', component: FollowerComponent, data: { animation: 'followers' } }
 
     ]  

@@ -20,9 +20,9 @@ export class TwitSubmitComponent implements OnInit {
     // const twit = {
     //   twitText: this.twitText
     // }
-    
+    let current_account = JSON.parse(localStorage.getItem("current_account"))
     const twit: Twit = {
-      User: "User",
+      User: current_account.user,
       Mesaj: this.twitText,
       Data: "2019",
       Likes: "0",
